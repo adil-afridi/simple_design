@@ -4,10 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
 
-    <h1>hello world</h1>
+    <!--navbar-->
+    <nav class="navbar" id="home">
+        <div class="logo">
+            <h1>ADVENTURE</h1>
+        </div>
+         <div class="nav_links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#tours">Tours</a></li>
+                    <li><a href="#explore">Explore</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="" class="btn">Contact</a></li>
+                </ul>
+                <i class="menu_icon fas fa-bars"></i>
+         </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="header_content">
+            <h2>Explore The colorful World</h2>
+            <div class="line"></div>
+            <h1>A WONDERFULL GIFT</h1>
+            <a href="" class="btn">Learn More</a>
+        </div>
+    </header>
+
+
+    <section class="events">
+        <h2 class="title">Upcoming Events</h2>
+        <div class="line"></div>
+        <div class="row">
+            <div class="col">
+                <img src="images/m6.jpg" alt="">
+                <h3>Everest Camp Trek</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, aperiam! Ducimus, minima.</p>
+                <a href="" class="btn">Learn More</a>
+            </div>
+            <div class="col col2">
+                <img src="images/m5.jpg" alt="">
+                <h3>Walking Holidays</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, aperiam! Ducimus, minima.</p>
+                <a href="" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!--explore-->
+    
+    <section class="explore" id="explore">
+        <div class="explore_content">
+            <h1>Explore The World</h1>
+            <div class="line"></div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis soluta, non laborum 
+                exercitationem ipsum deserunt numquam illo, at culpa dolores sint quae iure eaque 
+                natus iste quis sed animi accusamus!
+            </p>
+            <a href="" class="btn">Learn More</a>
+        </div>
+    </section>
+
+
+    <section class="tours" id="tours">
+        <div class="row">
+            <div class="col content_col">
+                <h1>Our Upcoming Tours & Destination</h1>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum error necessitatibus corporis illo vero nesciunt similique atque, maxime odit rem debitis temporibus 
+                    libero, provident cupiditate unde quia fugit sit velit.
+                </p>
+                <a href="" class="btn">Learn More</a>
+            </div>
+            <div class="col image_col">
+                <div class="image_gallery">
+                    <img src="images/m1.jpg" alt="">
+                    <img src="images/m3.jpg" alt="">
+                    <img src="images/m4.jpg" alt="">
+                    <img src="images/m5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <p>123 Fifth Avenu, NY 10160, New York, USA | Phone: 0333-4645097 | Email: adiljamal002@gmail.com</p>
+        <p>Copyright &copy; 2023 Outdoor Adventure</p>
+    </section>
+
+
+    <script>
+        var nav_links = document.querySelector(".nav_links") 
+        var menu_icon = document.querySelector(".menu_icon") 
+
+        menu_icon.onclick = () =>{
+            nav_links.classList.toggle("menu_toggle");
+        }
+    </script>
     
 </body>
 </html>
